@@ -3,18 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <title>test_0001</title>
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/common.css">
 </head>
 <body>
 
 <header>
-	<h1>juan feng</h1>
-	<nav>
-		<p><a href="{{site.baseurl}}/index.html">home</a></p>
-		<p><a href="{{site.baseurl}}/playground.html">playground</a></p>
-	</nav>
-	</header>
+	<h1>header here</h1>
+	{% include nav.html navclass='nav-top' %}
+</header>
 
 {{content}}
+
+<footer>
+	<h1>footer here</h1>
+	{% include nav.html navclass='nav-bottom' %}
+</footer>
 
 </body>
 </html>

@@ -1,0 +1,18 @@
+---
+layout: playground
+---
+
+<h1>playground-post-new</h1>
+<p>dis is the playground page!</p>
+<ul>
+	{% for playground-post in site.categories.new %}
+		<li>
+			<a href="">{{playground-post.title}}</a>
+			<p>
+				{{playground-post.meta}}
+				{{playground-post.source}}
+			</p>
+		</li>
+	{% endfor %}
+</ul>
+
