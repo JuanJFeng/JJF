@@ -1,0 +1,22 @@
+---
+---
+$font-stack: Helvetica, sans-serif;
+
+// start content
+
+html {
+	font: 100% $font-stack;
+}
+.nav-top {
+
+	.current  {
+		background-color: #0000ff;
+	}
+}
+
+.nav-bottom {
+	
+	.current  {
+		background-color: #ff00ff;
+	}
+}
