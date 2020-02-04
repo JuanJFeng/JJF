@@ -1,6 +1,11 @@
 ---
 ---
-$font-stack: Helvetica, sans-serif;
+@font-face {
+	font-family: "CiroSans Book";
+	src: url("../assets/fonts/CiroSans-Book.otf");
+}
+
+$font-stack: CiroSans Book, sans-serif;
 
 // start content
 
@@ -19,4 +24,9 @@ html {
 	.current  {
 		background-color: #ff00ff;
 	}
+}
+
+h1, p, strong {
+	font-size: 18px;
+	font-weight: normal;
 }

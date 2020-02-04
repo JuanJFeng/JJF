@@ -1,16 +1,16 @@
 	<nav>
-		<ul class="nav {{include.navclass}}">
+		<div class="nav {{include.navclass}}">
 	
-            <li>
+            <p>
                 <a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">
                 home</a>
-            </li>
-            <li>
+            </p>
+            <p>
                 <a href="{{site.baseurl}}/playground-post-old.html" class="{% if page.url contains '/playground-post-old.html' or page.url contains '/playground-post-new.html' %}current{% endif %}">
                 playground</a>
-            </li>
+            </p>
 
-		</ul>
+		</div>
 	</nav>
 
 

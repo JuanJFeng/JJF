@@ -4,15 +4,15 @@ layout: playground
 
 <h1>playground-post</h1>
 <p>dis is the playground page!</p>
-<ul>
+<div>
 	{% for playground-post in site.categories.old limit:1 %}
-		<li>
+		<div>
 			<a href="{{site.baseurl}}/{{playground-post.url}}">{{playground-post.title}}</a>
 			<p>
 				{{playground-post.meta}}
 				{{playground-post.source}}
 			</p>
-		</li>
+		</div>
 	{% endfor %}
-</ul>
+</div>
 
