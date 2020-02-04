@@ -7,7 +7,7 @@ layout: playground
 <ul>
 	{% for playground-post in site.categories.new %}
 		<li>
-			<a href="">{{playground-post.title}}</a>
+			<a href="{{site.baseurl}}/{{playground-post.url}}">{{playground-post.title}}</a>
 			<p>
 				{{playground-post.meta}}
 				{{playground-post.source}}
