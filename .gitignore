@@ -1,1 +1,37 @@
+# Jekyll
 _site
+.jekyll-metadata
+
+# Type faces
+*.otf
+*.ttf
+*.woff
+*.eot
+*.ttc
+
+# Adobe files
+*.pdf
+*.ai
+*.psd
+*.indd
+*.indb
+
+# Temporary files
+tmp
+
+# Video & audio
+*.mov
+*.mp4
+*.m4v
+*.f4v
+*.f4p
+*.ogv
+*.webm
+*.flv
+*.mp3
+*.m4a
+*.f4a
+*.f4b
+*.oga
+*.ogg
+*.opus
