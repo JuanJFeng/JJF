@@ -2,6 +2,7 @@ markdown: kramdown
 baseurl: /test_0001
 exclude: ['README.md']
 
+permalink: :title/
 sass:
-  sass_dir: _sass
-  style: compressed
+  sass_dir: css
+    style: compressed
