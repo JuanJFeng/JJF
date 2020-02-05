@@ -5,4 +5,4 @@ exclude: ['README.md']
 permalink: :title/
 sass:
   sass_dir: css
-    style: compressed
+  style: compressed
