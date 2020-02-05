@@ -3,5 +3,5 @@ baseurl: /test_0001
 exclude: ['README.md']
 
 sass:
-  sass_dir: scss
+  sass_dir: _sass
   style: compressed
