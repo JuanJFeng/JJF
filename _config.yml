@@ -5,3 +5,8 @@ exclude: ['README.md']
 sass:
   sass_dir: _sass
   style: compressed
+
+sass:
+  load_paths:
+      - _sass
+      - node_modules
