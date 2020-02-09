@@ -1,30 +1,73 @@
+
+// font
 @font-face {
 	font-family: "CiroSans Book";
 	src: url("../assets/fonts/CiroSans-Book.otf");
 }
 
+// variables-font
 $font-stack: CiroSans Book, sans-serif;
+$text-size: 18px;
+$text-color: #000000;
+$link-color-1: #0000ff;
+$link-color-2: #ff00ff;
 
-// start content
+// variables-grid
+$line-height: 24px; //unit of measure_height
 
-html {
-	font: 100% $font-stack;
+// start-content
+html, body {
+	font-family: $font-stack !important;
 }
+
+h1, p, strong {
+	font-size: $text-size !important;
+	font-weight: normal !important;
+	color: $text-color;
+	margin-bottom: 0 !important;
+	line-height: $line-height !important;
+
+	//grid
+	//border: 1px solid black;
+}
+
+a {
+	color: $text-color !important;
+}
+
+a:hover {
+	opacity: 0;
+	text-decoration: none !important;
+}
+
+// navigation
+.nav {
+	display: block !important;
+	margin-top: $line-height;
+
+}
+
 .nav-top {
 
+	a {
+		color: $link-color-1 !important;
+	}
 	.current  {
-		background-color: #0000ff;
+		background-color: $link-color-1;
+	
 	}
 }
 
 .nav-bottom {
+
+	a {
+		color: $link-color-2 !important;
+	}
 	
 	.current  {
-		background-color: #ff00ff;
+		background-color: $link-color-2;
+
 	}
 }
 
-h1, p, strong {
-	font-size: 18px;
-	font-weight: normal;
-}
+
