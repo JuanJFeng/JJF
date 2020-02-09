@@ -1,32 +1,5 @@
 ---
 ---
-@font-face {
-	font-family: "CiroSans Book";
-	src: url("../assets/fonts/CiroSans-Book.otf");
-}
+@import 'bootstrap/bootstrap';
 
-$font-stack: CiroSans Book, sans-serif;
 
-// start content
-
-html {
-	font: 100% $font-stack;
-}
-.nav-top {
-
-	.current  {
-		background-color: #00ffff;
-	}
-}
-
-.nav-bottom {
-	
-	.current  {
-		background-color: #ff00ff;
-	}
-}
-
-h1, p, strong {
-	font-size: 18px;
-	font-weight: normal;
-}
