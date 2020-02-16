@@ -4,12 +4,8 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
-# Type faces
-*.otf
-*.ttf
-*.woff
-*.eot
-*.ttc
+.DS_Store
+  assets/fonts/*
 
 # Adobe files
 *.pdf
