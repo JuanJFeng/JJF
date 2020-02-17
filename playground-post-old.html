@@ -2,10 +2,8 @@
 layout: playground
 ---
 
-<h1>playground-post</h1>
-<p>dis is the playground page!</p>
 <div>
-	{% for playground-post in site.categories.old limit:1 %}
+	{% for playground-post in site.categories.old %}
 		<div>
 			<a href="{{site.baseurl}}/{{playground-post.url}}">{{playground-post.title}}</a>
 			<p>

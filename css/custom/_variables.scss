@@ -14,13 +14,15 @@ $link-color-2: #ff00ff;
 
 // variables-grid
 $line-height: 24px; //unit of measure_height
+$width-header: 250px;
 
 // start-content
 html, body {
 	font-family: $font-stack !important;
+	margin: $line-height;
 }
 
-h1, p, strong {
+h1, p, a, strong {
 	font-size: $text-size !important;
 	font-weight: normal !important;
 	color: $text-color;
@@ -36,12 +38,31 @@ a {
 }
 
 a:hover {
-	opacity: 0;
 	text-decoration: none !important;
 }
 
-.row {
-	margin-top: $line-height;
+header {
+	width: $width-header;
+	position: fixed;
+	z-index: 99;
+	//height: calc(100vh - #{$line-height}*2);
+}
+.container-article {
+	margin-left: $width-header;
+	width: auto;
+}
+.article-text {
+	margin-top: $line-height; 
+}
+
+.nav-sotto {
+	padding-top: $line-height*4;
+	width: $width-header;
+	position: fixed;
+
+	p {
+		padding-top: $line-height !important;
+	}
 
 }
 
@@ -55,10 +76,10 @@ a:hover {
 .nav-top {
 
 	a {
-		color: $link-color-1 !important;
+		color: $text-color !important;
 	}
 	.current  {
-		background-color: $link-color-1;
+		color: $link-color-1 !important;
 	
 	}
 }
@@ -66,11 +87,11 @@ a:hover {
 .nav-bottom {
 
 	a {
-		color: $link-color-2 !important;
+		color: $text-color !important;
 	}
 	
 	.current  {
-		background-color: $link-color-2;
+		color: $link-color-2;
 
 	}
 }
