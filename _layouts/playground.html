@@ -4,17 +4,9 @@ layout: default
 
 <div class="nav-sotto">
 
-	<p><a href="{{site.baseurl}}/playground-post-new.html">Ongoing</a></p>
+	<p><a href="{{site.baseurl}}/playground-post-new.html">Index 2020</a></p>
 
 	{% for playground-post in site.categories.new %}
-		<div>
-			<a href="{{site.baseurl}}/{{playground-post.url}}">{{playground-post.title}}</a>
-		</div>
-	{% endfor %}
-	
-	<p><a href="{{site.baseurl}}/playground-post-old.html">2019</a></p>
-
-	{% for playground-post in site.categories.old %}
 		<div>
 			<a href="{{site.baseurl}}/{{playground-post.url}}">{{playground-post.title}}</a>
 		</div>

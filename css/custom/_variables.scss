@@ -39,8 +39,15 @@ a {
 
 a:hover {
 	text-decoration: none !important;
+	color: $link-color-2 !important;
 }
-
+sub, sup {
+	color: $link-color-2;
+	font-size: calc(#{$text-size}*0.6) !important;
+	top: - calc(#{$text-size}*0.2) !important;
+	padding: 3px;
+	text-transform: uppercase;
+}
 header {
 	width: $width-header;
 	position: fixed;
@@ -52,7 +59,7 @@ header {
 	width: auto;
 }
 .article-text {
-	margin-top: $line-height; 
+	margin-top: $line-height;
 }
 
 .nav-sotto {
@@ -80,7 +87,7 @@ header {
 	}
 	.current  {
 		color: $link-color-1 !important;
-	
+
 	}
 }
 
