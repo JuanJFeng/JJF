@@ -4,11 +4,9 @@ layout: default
 
 <div class="nav-sotto">
 
-	<p>
-		<a href="{{site.baseurl}}/playground-post.html">Index</a>
-	</p>
+	<p>Index</p>
 
-	{% for playground-post in site.categories.new %}
+	{% for playground-post in site.categories.post %}
 		<div>
 			<a href="{{site.baseurl}}/{{playground-post.url}}">{{playground-post.title}}</a>
 		</div>
