@@ -36,11 +36,11 @@ h1, p, a, strong {
 a {
 	color: $link-color-1 !important;
 }
-
 a:hover {
 	text-decoration: none !important;
 	color: $link-color-2 !important;
 }
+
 sub, sup {
 	color: $link-color-2;
 	font-size: calc(#{$text-size}*0.6) !important;
@@ -48,16 +48,19 @@ sub, sup {
 	padding: 3px;
 	text-transform: uppercase;
 }
+
 header {
 	width: $width-header;
 	position: fixed;
 	z-index: 99;
 	//height: calc(100vh - #{$line-height}*2);
 }
+
 .container-article {
 	margin-left: $width-header;
 	width: auto;
 }
+
 .article-text {
 	margin-top: $line-height;
 }
