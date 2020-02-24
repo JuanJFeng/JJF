@@ -1,16 +1,13 @@
 <nav>
     <div class="nav {{include.navclass}}">
-
-        <p>
-            <a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">
-            Info + Contact</a>
-        </p>
-        <p>
-            <a href="{{site.baseurl}}/playground-post.html" class="{% if page.url contains '/playground-post.html' %}current{% endif %}">
-            Process Blog
-            <sup>New</sup>
-            </a>
-        </p>
+        
+        <a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">
+        Info + Contact</a>
+    
+        <a href="{{site.baseurl}}/playground-post.html" class="{% if page.url contains '/playground-post.html' %}current{% endif %}">
+        Process Blog
+        <sup>New</sup>
+        </a>
 
     </div>
 </nav>

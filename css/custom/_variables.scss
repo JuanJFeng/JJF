@@ -28,9 +28,10 @@ h1, p, a, strong {
 	color: $text-color;
 	margin-bottom: 0 !important;
 	line-height: $line-height !important;
-
+	display: block;
+	
 	//grid
-	border: 1px solid black;
+	box-shadow: inset 0 0 8px #000000;
 }
 
 a {
@@ -71,7 +72,7 @@ header {
 	position: fixed;
 
 	p {
-		padding-top: $line-height !important;
+		margin-top: $line-height !important;
 	}
 
 }
@@ -120,6 +121,8 @@ header {
 
 	img {
 		height: calc(#{$line-height}*15);
+		margin: $line-height 0;
+		
 	}
 }
 
