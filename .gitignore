@@ -7,7 +7,6 @@ _site/
 # Typefaces
 *.otf
 *.ttf
-assets/fonts
 
 # Temporary files
 tmp
