@@ -21,6 +21,7 @@ $width-header: 240px;
 html, body {
 	font-family: $font-stack !important;
 	margin: $line-height;
+	font-kerning: normal;
 }
 
 h1, p, a, strong {
