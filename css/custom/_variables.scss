@@ -1,8 +1,9 @@
 
 // font
 @font-face {
-	font-family: "CiroSans Book";
-	src: url("../assets/fonts/CiroSans-Book.otf");
+	font-family: CiroSans Book;
+	src: url('../assets/fonts/CiroSans-Book.woff') format('woff'),
+		 url('../assets/fonts/CiroSans-Book.woff2') format('woff2');
 }
 
 // variables-font
