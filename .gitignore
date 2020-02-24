@@ -5,7 +5,7 @@ _site/
 .jekyll-metadata
 
 .DS_Store
-  assets/fonts/*
+  ../assets/fonts/*
 
 # Type faces
 *.otf
