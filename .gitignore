@@ -4,37 +4,13 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
-
+.DS_Store
+    assets/fonts/*
 
 # Type faces
 *.otf
 *.ttf
-*.eot
-*.ttc
-
-# Adobe files
-*.pdf
-*.ai
-*.psd
-*.indd
-*.indb
 
 # Temporary files
 tmp
 
-# Video & audio
-*.mov
-*.mp4
-*.m4v
-*.f4v
-*.f4p
-*.ogv
-*.webm
-*.flv
-*.mp3
-*.m4a
-*.f4a
-*.f4b
-*.oga
-*.ogg
-*.opus
