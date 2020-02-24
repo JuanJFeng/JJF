@@ -2,15 +2,22 @@
 layout: playground
 ---
 
-<div>
+<div class="post-container">
+
 	{% for playground-post in site.categories.post %}
-		<div>
-			<a href="{{site.baseurl}}/{{playground-post.url}}">{{playground-post.title}}</a>
-			<p>
-				{{playground-post.meta}}
-				{{playground-post.source}}
-			</p>
+		<div class="post-overview">
+			<div class="post-title">
+				<a href="{{site.baseurl}}/{{playground-post.url}}">{{playground-post.title}}</a>
+			</div>
+
+			<div class="post-text">
+			<p>{{playground-post.meta}}</p>
+			<p>{{playground-post.source}}</p>
+			</div>
+
+			<img src="{{site.baseurl}}/img/index-img/{{playground-post.image}}" alt="">
 		</div>
 	{% endfor %}
+
 </div>
 

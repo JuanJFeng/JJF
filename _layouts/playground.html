@@ -8,7 +8,7 @@ layout: default
 
 	{% for playground-post in site.categories.post %}
 		<div>
-			<a href="{{site.baseurl}}/{{playground-post.url}}">{{playground-post.title}}</a>
+			<a href="{{site.baseurl}}{{playground-post.url}}">{{playground-post.title}}</a>
 		</div>
 	{% endfor %}
 	
