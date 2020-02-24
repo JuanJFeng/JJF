@@ -4,12 +4,10 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
-.DS_Store
-    assets/fonts/*
-
-# Type faces
+# Typefaces
 *.otf
 *.ttf
+assets/fonts
 
 # Temporary files
 tmp
