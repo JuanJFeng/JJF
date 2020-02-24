@@ -4,6 +4,9 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
+.DS_Store
+  assets/fonts/*
+
 # Type faces
 *.otf
 *.ttf
