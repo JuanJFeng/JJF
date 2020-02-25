@@ -1,6 +1,6 @@
 markdown: kramdown
 baseurl: ""
-url: ""
+url: "https://juanjunfeng.com"
 exclude: ['README.md']
 
 sass:
