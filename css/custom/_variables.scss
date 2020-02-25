@@ -40,13 +40,13 @@ h1, p, a, strong {
 
 a {
 	color: $link-color-1 !important;
-	//box-shadow
-	box-shadow: inset 0 0 8px #000000;
+	//box-shadow: inset 0 0 8px #000000;
 	//border-radius: calc(#{$line-height}*0.5);
 }
 a:hover {
 	text-decoration: none !important;
 	color: $link-color-2 !important;
+	box-shadow: inset 0 0 8px #000000;
 }
 
 sub, sup {
