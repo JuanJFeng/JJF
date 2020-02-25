@@ -98,7 +98,9 @@ header {
 	}
 	.current  {
 		color: $link-color-1 !important;
-
+	}
+	.current:hover {
+		box-shadow: none;
 	}
 }
 
@@ -110,7 +112,6 @@ header {
 	
 	.current  {
 		color: $link-color-2;
-
 	}
 }
 
