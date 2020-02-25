@@ -1,5 +1,5 @@
 markdown: kramdown
-baseurl: URL
+baseurl: /test_0001
 exclude: ['README.md']
 
 sass:
