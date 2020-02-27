@@ -8,13 +8,19 @@
 // variables-font
 $font-stack: CiroSans Book, Arial, sans-serif;
 $text-size: 18px;
-$text-color: #000000;
-$link-color-1: #0000ff;
-$link-color-2: #ff00ff;
 
 // variables-grid
 $line-height: 24px; //unit of measure_height
 $width-header: 240px;
+
+// colors
+$text-color: #000000;
+$link-color-1: #0000ff;
+$link-color-2: #ff00ff;
+
+// variables-resize
+$mobile: 590px;
+$tablet: 768px;
 
 // start-content
 html, body {
@@ -22,6 +28,10 @@ html, body {
 	margin: $line-height;
 	font-kerning: normal;
 	word-spacing: 0.001em;
+
+	::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 h1, p, a, strong {
@@ -31,24 +41,9 @@ h1, p, a, strong {
 	margin-bottom: 0 !important;
 	line-height: $line-height !important;
 	display: block;
-	
 	// grid
 	//box-shadow: inset 0 0 2px #000000;
-
 }
-
-a {
-	color: $link-color-1 !important;
-	//box-shadow: inset 0 0 8px #000000;
-	//border-radius: calc(#{$line-height}*0.5);
-
-	&:hover {
-		text-decoration: none !important;
-		color: $link-color-2 !important;
-		box-shadow: inset 0 0 8px #000000;
-	}
-}
-
 
 sub, sup {
 	color: $link-color-2;
@@ -56,6 +51,17 @@ sub, sup {
 	top: - calc(#{$text-size}*0.2) !important;
 	padding: 3px;
 	text-transform: uppercase;
+}
+
+a {
+	color: $link-color-1 !important;
+
+	&:hover {
+		text-decoration: none !important;
+		color: $link-color-2 !important;
+		box-shadow: inset 0 0 8px #000000;
+		//border-radius: calc(#{$line-height}*0.5);
+	}
 }
 
 header {
@@ -169,7 +175,7 @@ figure {
 	&.third {
 
 		img {
-			width: 33.33%
+			width: 33.33%;
 	  	}
   
 	  	figcaption {
@@ -180,7 +186,18 @@ figure {
 	&.fourth {
 
 		img {
-			width: 25%
+			width: 25%;
+	  	}
+  
+	  	figcaption {
+			width: 100%;
+	  	}
+	}
+
+	&.sixth {
+
+		img {
+			width: 16.66%;
 	  	}
   
 	  	figcaption {
