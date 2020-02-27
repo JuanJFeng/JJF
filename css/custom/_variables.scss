@@ -124,15 +124,10 @@ header {
 }
 
 // playground-post
-
 .post-overview {
+
 	.post-title {
 		display: grid;
-	}
-
-	.post-text {
-		margin-top: $line-height;
-
 	}
 
 	img {
@@ -142,11 +137,14 @@ header {
 	}
 }
 
-// markdown
-
 // centered style for images in figures
 figure {
 	display: table !important;
+	margin: $line-height $line-height*-0.5 !important;
+
+	img {
+		padding: 0 $line-height*0.5;
+	}
 
 	&.centered {
 
@@ -155,53 +153,59 @@ figure {
 			margin-left: auto;
 			margin-right: auto;
 		}
-
-		figcaption {
-			width: 100%;
-		}
 	}
-  
+
 	&.half {
 
 		img {
-			width: 50%
-		}
+			width: 50%;
 
-		figcaption {
-			width: 100%;
+			@media only screen and (max-width: $mobile) {
+				width: 100%;
+			}
 		}
 	}
-  
+
 	&.third {
 
 		img {
 			width: 33.33%;
-	  	}
-  
-	  	figcaption {
-			width: 100%;
-	  	}
+
+			@media only screen and (max-width: $tablet) {
+				width: 100%;
+			}
+		}
 	}
 
 	&.fourth {
 
 		img {
 			width: 25%;
-	  	}
-  
-	  	figcaption {
-			width: 100%;
-	  	}
+
+			@media only screen and (max-width: $tablet) {
+				width: 50%;
+			}
+			@media only screen and (max-width: $mobile) {
+				width: 100%;
+			}
+		}
 	}
 
 	&.sixth {
 
 		img {
 			width: 16.66%;
-	  	}
-  
-	  	figcaption {
-			width: 100%;
-	  	}
+
+			@media only screen and (max-width: $tablet) {
+				width: 50%;
+			}
+			@media only screen and (max-width: $mobile) {
+				width: 100%;
+			}
+		}
+	}
+
+	figcaption {
+		width: 100%;
 	}
 }
