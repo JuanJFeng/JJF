@@ -69,11 +69,20 @@ header {
 	position: fixed;
 	z-index: 99;
 	//height: calc(100vh - #{$line-height}*2);
+
+	@media only screen and (max-width: $mobile) {
+		position: static;
+	}
 }
 
 .container-article {
 	margin-left: $width-header;
 	width: auto;
+
+	@media only screen and (max-width: $mobile) {
+		margin-left: 0;
+		padding-top: $line-height;
+	}
 }
 
 .article-text {
@@ -84,18 +93,21 @@ header {
 	padding-top: $line-height*4;
 	width: $width-header;
 	position: fixed;
+	
+	@media only screen and (max-width: $mobile) {
+		position: static;
+		padding-top: 0;
+	}
 
 	p {
 		margin-top: $line-height !important;
 	}
-
 }
 
 // navigation
 .nav {
 	display: block !important;
 	margin-top: $line-height; 
-
 }
 
 .nav-top {
@@ -103,6 +115,7 @@ header {
 	a {
 		color: $link-color-1 !important;
 	}
+
 	.current  {
 		color: $text-color !important;
 
@@ -133,6 +146,11 @@ header {
 	img {
 		height: calc(#{$line-height}*15);
 		margin: $line-height 0;
+
+		@media only screen and (max-width: $mobile) {
+			width: 100%;
+			height: auto;
+		}
 		
 	}
 }
@@ -142,8 +160,16 @@ figure {
 	display: table !important;
 	margin: $line-height $line-height*-0.5 !important;
 
+	@media only screen and (max-width: $mobile) {
+		margin: 0 !important;
+	}
+
 	img {
 		padding: 0 $line-height*0.5;
+
+		@media only screen and (max-width: $mobile) {
+			padding: 0 0 $line-height;
+		}
 	}
 
 	&.centered {
