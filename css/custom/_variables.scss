@@ -152,7 +152,8 @@ footer {
 	}
 
 	img {
-		height: calc(#{$line-height}*15);
+		max-width: 100%;
+		max-height: calc(#{$line-height}*15);
 		margin: $line-height 0 0;
 		box-shadow: 0 0 1px #000000;
 		//border: 1px solid black;
@@ -170,7 +171,6 @@ footer {
 		p {
 			display: inline-block;
 		}
-		
 	}
 }
 
