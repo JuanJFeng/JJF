@@ -148,11 +148,22 @@ footer {
 
 	img {
 		height: calc(#{$line-height}*15);
-		margin: $line-height 0;
+		margin: $line-height 0 0;
+		box-shadow: 0 0 1px #000000;
+		//border: 1px solid black;
 
 		@media only screen and (max-width: $mobile) {
 			width: 100%;
 			height: auto;
+		}
+		
+	}
+
+	.post-text {
+		margin-bottom: $line-height;
+
+		p {
+			display: inline-block;
 		}
 		
 	}
