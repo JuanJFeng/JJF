@@ -75,7 +75,8 @@ header, footer {
 	}
 }
 footer {
-	bottom: $line-height;
+	bottom: 0;
+	margin-bottom: $line-height;
 }
 
 .container-article {
@@ -85,6 +86,10 @@ footer {
 	@media only screen and (max-width: $mobile) {
 		margin-left: 0;
 		padding-top: $line-height;
+	}
+
+	h1 {
+		margin-bottom: $line-height !important;
 	}
 }
 
@@ -172,17 +177,18 @@ footer {
 // centered style for images in figures
 figure {
 	display: table !important;
-	margin: $line-height $line-height*-0.5 !important;
+	margin: 0 $line-height*-0.5 !important;
 
 	@media only screen and (max-width: $mobile) {
 		margin: 0 !important;
 	}
 
 	img {
-		padding: 0 $line-height*0.5;
+		margin: 0 $line-height*0.5 $line-height;
+		box-shadow: 0 0 1px #000000;
 
 		@media only screen and (max-width: $mobile) {
-			padding: 0 0 $line-height;
+			margin: 0 0 $line-height 0;
 		}
 	}
 
@@ -195,10 +201,21 @@ figure {
 		}
 	}
 
+	&.one {
+
+		img {
+			width: calc(100% - #{$line-height});
+
+			@media only screen and (max-width: $mobile) {
+				width: 100%;
+			}
+		}
+	}
+
 	&.half {
 
 		img {
-			width: 50%;
+			width: calc(50% - #{$line-height});
 
 			@media only screen and (max-width: $mobile) {
 				width: 100%;
@@ -209,9 +226,12 @@ figure {
 	&.third {
 
 		img {
-			width: 33.33%;
+			width: calc(33.33% - #{$line-height});
 
 			@media only screen and (max-width: $tablet) {
+				width: calc(100% - #{$line-height});
+			}
+			@media only screen and (max-width: $mobile) {
 				width: 100%;
 			}
 		}
@@ -220,10 +240,10 @@ figure {
 	&.fourth {
 
 		img {
-			width: 25%;
+			width: calc(25% - #{$line-height});
 
 			@media only screen and (max-width: $tablet) {
-				width: 50%;
+				width: calc(50% - #{$line-height});
 			}
 			@media only screen and (max-width: $mobile) {
 				width: 100%;
@@ -234,10 +254,10 @@ figure {
 	&.sixth {
 
 		img {
-			width: 16.66%;
+			width: calc(16.66% - #{$line-height});
 
 			@media only screen and (max-width: $tablet) {
-				width: 50%;
+				width: calc(50% - #{$line-height});
 			}
 			@media only screen and (max-width: $mobile) {
 				width: 100%;

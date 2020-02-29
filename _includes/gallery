@@ -15,7 +15,7 @@
 {% elsif gallery.size >= 4 %}
   {% assign gallery_layout = 'fourth' %}
 {% else %}
-  {% assign gallery_layout = '' %}
+  {% assign gallery_layout = 'one' %}
 {% endif %}
 
 <figure class="{{ gallery_layout }} {{ include.class }}">
