@@ -1,15 +1,17 @@
 <nav>
     <div class="nav {{include.navclass}}">
-            
-        <p>
-        Font Size
-        <sup>Coming</sup>
+
+        <p>Font Size
+            <sup>Coming</sup>
         </p>
+
+        <a href="{{site.baseurl}}/about.html" class="{% if page.url == '/about.html' %}current{% endif %}">
+            About<sup>this site</sup></a>
 
         <a href="https://www.instagram.com/juanfeng_" target="_blank">
             Instagram
         </a>
-
+        
     </div>
 </nav>
 

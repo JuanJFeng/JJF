@@ -7,10 +7,10 @@
 
 // variables-font
 $font-stack: CiroSans Book, Arial, sans-serif;
-$text-size: 18px;
+$text-size: 20px;
 
 // variables-grid
-$line-height: 24px; //unit of measure_height
+$line-height: 25px; //unit of measure_height
 $width-header: 240px;
 
 // colors
@@ -95,6 +95,10 @@ footer {
 
 .article-text {
 	margin-top: $line-height;
+
+	.link-inline {
+		display: inline-block;
+	}
 }
 
 .nav-sotto {
