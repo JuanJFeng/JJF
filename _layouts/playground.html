@@ -7,9 +7,11 @@ layout: default
 	<p>Index</p>
 
 	{% for playground-post in site.categories.post %}
-		<div>
-			<a href="{{site.baseurl}}{{playground-post.url}}">{{playground-post.title}}</a>
-		</div>
+		{% if playground-post.type contains "miniblog" %}
+			<div>
+				<a href="{{site.baseurl}}{{playground-post.url}}">{{playground-post.title}}</a>
+			</div>
+		{% endif %}
 	{% endfor %}
 	
 </div>
