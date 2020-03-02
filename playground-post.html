@@ -5,7 +5,7 @@ layout: playground
 <div class="post-container">
 
 	{% for playground-post in site.categories.post %}
-		<div class="post-overview">
+		<div class="post-overview post">
 			<div class="post-title">
 				<a href="{{site.baseurl}}{{playground-post.url}}">{{playground-post.title}}</a>
 			</div>
@@ -19,5 +19,21 @@ layout: playground
 		</div>
 	{% endfor %}
 
+	{% for playground-post in site.categories.miniblog %}
+		<div class="post-overview miniblog">
+			<div>
+				<img src="{{site.baseurl}}/img/{{playground-post.image}}" alt="">
+			</div>
+			<div class="post-text">
+				<p>{{playground-post.meta}}</p>
+			</div>
+		</div>
+	{% endfor %}
+
 </div>
+
+
+
+
+
 

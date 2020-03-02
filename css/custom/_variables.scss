@@ -29,6 +29,10 @@ html, body {
 	font-kerning: normal;
 	word-spacing: 0.001em;
 
+	@media only screen and (max-width: $mobile) {
+		margin: $line-height*0.5;
+	}
+
 	::-webkit-scrollbar {
         display: none;
     }
