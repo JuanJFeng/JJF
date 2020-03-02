@@ -30,7 +30,7 @@ html, body {
 	word-spacing: 0.001em;
 
 	@media only screen and (max-width: $mobile) {
-		margin: $line-height*0.5;
+		margin: $line-height $line-height*0.5;
 	}
 
 	::-webkit-scrollbar {
