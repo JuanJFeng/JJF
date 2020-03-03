@@ -30,7 +30,7 @@ html, body {
 	word-spacing: 0.001em;
 
 	@media only screen and (max-width: $mobile) {
-		margin: $line-height $line-height*0.5;
+		margin: $line-height $line-height*0.6;
 	}
 
 	::-webkit-scrollbar {
@@ -201,6 +201,22 @@ figure {
 		}
 	}
 
+	&.mobile-hide {
+
+		@media only screen and (max-width: $tablet) {
+			display: none !important;
+		}
+	}
+
+	&.desktop-hide {
+		display: none !important;
+
+		@media only screen and (max-width: $tablet) {
+			display: table !important;
+		}
+
+	}
+
 	&.centered {
 
 		img {
@@ -226,6 +242,9 @@ figure {
 		img {
 			width: calc(50% - #{$line-height});
 
+			@media only screen and (max-width: $tablet) {
+				width: calc(100% - #{$line-height});
+			}
 			@media only screen and (max-width: $mobile) {
 				width: 100%;
 			}
