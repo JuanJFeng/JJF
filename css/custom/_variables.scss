@@ -1,4 +1,4 @@
-// font
+// typeface
 @font-face {
 	font-family: CiroSans Book;
 	src: url('../assets/fonts/CiroSans-Book.woff') format('woff'),
@@ -13,16 +13,16 @@ $text-size: 20px;
 $line-height: 26px; //unit of measure_height
 $width-header: 240px;
 
+// variables-resize
+$mobile: 590px;
+$tablet: 1024px;
+
 // colors
 $text-color: #000000;
 $link-color-1: #0000ff;
 $link-color-2: #ff00ff;
 
-// variables-resize
-$mobile: 590px;
-$tablet: 1024px;
-
-// start-content
+// root-element
 html, body {
 	font-family: $font-stack !important;
 	margin: $line-height;
@@ -46,12 +46,7 @@ h1, p, a, strong {
 	line-height: $line-height !important;
 	display: block;
 	// grid
-	//box-shadow: inset 0 0 2px #000000;
-}
-.case-sentitive {
-	font-feature-settings: 'case' on;
-	text-transform: uppercase;
-
+	box-shadow: inset 0 0 2px #000000;
 }
 
 sub, sup {
@@ -73,19 +68,57 @@ a {
 	}
 }
 
-header, footer {
+// opentype features
+.case-sentitive {
+	text-transform: uppercase;
+	font-feature-settings: 'case' on;
+	-moz-font-feature-settings: 'case'; 
+	-webkit-font-feature-settings: 'case'; 
+}
+
+.standard-ligatures {
+	font-variant-ligatures: common-ligatures;
+	font-feature-settings: 'liga' on;
+	-moz-font-feature-settings: 'liga';
+	-webkit-font-feature-settings: 'liga';
+}
+
+
+// start-content
+#page-container {
+	position: relative;
+	min-height: calc(100vh - #{$line-height}*2);
+  }
+
+#content-wrap {
+
+	@media only screen and (max-width: $mobile) {
+		padding-bottom: $line-height*5; /* Footer height */
+	}
+}
+
+header {
 	width: $width-header;
 	position: fixed;
 	z-index: 99;
 	//height: calc(100vh - #{$line-height}*2);
 
 	@media only screen and (max-width: $mobile) {
+		width: 100%;
 		position: static;
 	}
 }
+
 footer {
-	bottom: 0;
-	margin-bottom: $line-height;
+	width: $width-header;
+	position: fixed;
+	bottom: $line-height;
+
+	@media only screen and (max-width: $mobile) {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+	}
 }
 
 .container-article {
@@ -159,6 +192,7 @@ footer {
 
 // playground-post
 .post-overview {
+	margin-bottom: $line-height*2;
 
 	.post-title {
 		display: grid;
@@ -179,7 +213,6 @@ footer {
 	}
 
 	.post-text {
-		margin-bottom: $line-height*2;
 
 		p {
 			display: inline;
@@ -187,17 +220,21 @@ footer {
 	}
 }
 
+.post-overview:last-child {
+	margin-bottom: 0;
+}
+
 // centered style for images in figures
 figure {
 	display: table !important;
-	margin: 0 $line-height*-0.5 !important;
+	margin: 0 $line-height*-0.5 $line-height !important;
 
 	@media only screen and (max-width: $mobile) {
 		margin: 0 !important;
 	}
 
 	img {
-		margin: 0 $line-height*0.5 $line-height;
+		margin: 0 $line-height*0.5;
 		box-shadow: 0 0 1px #000000;
 
 		@media only screen and (max-width: $mobile) {
@@ -301,3 +338,16 @@ figure {
 		width: 100%;
 	}
 }
+
+figure:last-child {
+	margin-bottom: 0 !important;
+}
+
+
+
+
+
+
+
+
+
