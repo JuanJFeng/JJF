@@ -7,7 +7,7 @@ layout: playground
 	{% for playground-post in site.categories.post %}
 		<div class="post-overview post">
 
-			{% if playground-post.type contains "miniblog" %}
+			{% if playground-post.type contains "post" %}
 				<div class="post-title">
 					<a href="{{site.baseurl}}{{playground-post.url}}">{{playground-post.title}}</a>				
 				</div>

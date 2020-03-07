@@ -25,17 +25,20 @@ $link-color-2: #ff00ff;
 // root-element
 html, body {
 	font-family: $font-stack !important;
-	margin: $line-height;
 	font-kerning: normal;
 	word-spacing: 0.001em;
-
-	@media only screen and (max-width: $mobile) {
-		margin: $line-height $line-height*0.6;
-	}
 
 	::-webkit-scrollbar {
         display: none;
     }
+}
+
+body {
+	margin: $line-height !important;
+
+	@media only screen and (max-width: $mobile) {
+		margin: $line-height $line-height*0.6 !important;
+	}
 }
 
 h1, p, a, strong {
@@ -88,6 +91,7 @@ a {
 #page-container {
 	position: relative;
 	min-height: calc(100vh - #{$line-height}*2);
+	min-height: calc(var(--vh, 1vh) * 100 - #{$line-height}*2);
   }
 
 #content-wrap {
