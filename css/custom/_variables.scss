@@ -90,7 +90,7 @@ a {
 // start-content
 #page-container {
 	position: relative;
-	min-height: calc(100vh - #{$line-height}*2);
+	min-height: calc(100vh - #{$line-height}*2); /* Fallback for browsers that do not support Custom Properties */
 	min-height: calc(var(--vh, 1vh) * 100 - #{$line-height}*2);
   }
 
