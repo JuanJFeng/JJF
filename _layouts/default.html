@@ -37,5 +37,24 @@
   		document.documentElement.style.setProperty('--vh', `${vh}px`);
 	});
 </script>
+
+<!-- try typefaces -->
+<script>
+    var wgthSlider      = document.getElementById('wgthSlider'),
+        wgthSliderValue = document.getElementById('wgthSliderValue'),
+        wdthSlider      = document.getElementById('wdthSlider'),
+        wdthSliderValue = document.getElementById('wdthSliderValue'),
+        sampleText      = document.getElementById('font1');
+    function updateSample(){
+        var wgthValue = wgthSlider.value,
+            wdthValue = wdthSlider.value;
+        wgthSliderValue.value = wgthSlider.value;
+        wdthSliderValue.value = wdthSlider.value;
+        sampleText.style.cssText = 'font-variation-settings: "wght" ' + wgthValue + ', "wdth" ' + wdthValue + ';'
+    };
+    wgthSlider.addEventListener('input', updateSample)
+    wdthSlider.addEventListener('input', updateSample)
+  </script>
+
 </body>
 </html>
