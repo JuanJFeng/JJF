@@ -15,5 +15,4 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-
-
+permalink: pretty
