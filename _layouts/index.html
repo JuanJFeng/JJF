@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="nav-sotto">
+
+	<p>Index</p>
+
+	{% for process-post in site.categories.post %}
+		{% if process-post.type contains "post" %}
+			<div>
+				<a href="{{site.baseurl}}{{process-post.url}}">{{process-post.title}}</a>
+			</div>
+		{% endif %}
+	{% endfor %}
+	
+</div>
+
+<div class="container-article">
+	{{content}}
+</div>
+

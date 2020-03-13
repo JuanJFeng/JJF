@@ -1,0 +1,34 @@
+---
+layout: index
+---
+
+<div class="post-container">
+
+	{% for process-post in site.categories.post %}
+		<div class="post-overview post">
+
+			{% if process-post.type contains "post" %}
+				<div class="post-title">
+					<a href="{{site.baseurl}}{{process-post.url}}">{{process-post.title}}</a>				
+				</div>
+			{% endif %}
+
+			<div>
+				<img src="{{site.baseurl}}/img/{{process-post.image}}" alt="">
+			</div>
+			
+			<div class="post-text">
+				<p>{{process-post.meta}}</p>
+				<p>{{process-post.source}}</p>
+			</div>
+
+		</div>
+	{% endfor %}
+
+</div>
+
+
+
+
+
+

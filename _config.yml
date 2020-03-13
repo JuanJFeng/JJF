@@ -15,9 +15,5 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-
-
-
-
-
-
+# Remove html extension
+permalink: /:title/
